@@ -35,6 +35,7 @@ with st.sidebar:
                     - Linkedin : <https://www.linkedin.com/in/manon-le-roux-data/> 
                     """)
     
+    
 if selected == accueil : 
     st.title('Déplacements des vélos en libre service de la ville de Lyon')
     st.markdown("Projet port-folio réalisé en 2023 sur 24h de données récupérées via l'API de la métropole de Lyon : [Documentation](https://www.data.gouv.fr/fr/datasets/historique-des-disponibilites-des-stations-velov-de-la-metropole-de-lyon/#discussion-63ee8ecd7b600fcdee918dfb)")
