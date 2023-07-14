@@ -1,0 +1,6 @@
+folium==0.13.0
+leafmap==0.20.2
+pandas==1.5.3
+plotly==5.14.1
+streamlit==1.22.0
+streamlit_option_menu==0.3.2
