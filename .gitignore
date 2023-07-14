@@ -2,5 +2,5 @@
 .csv
 
 # ignorer le repertoire archives 
-archives
-csv_files
+archives/
+csv_files/
