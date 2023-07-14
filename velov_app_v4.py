@@ -30,9 +30,8 @@ with st.sidebar:
         }
         )
     
-    st.title("Contact :")
     st.caption(""" 
-                    - GitHub : <https://github.com/manonbay/>
+                    - GitHub repo : <https://github.com/manonbay/2023_velov_v4>
                     - Linkedin : <https://www.linkedin.com/in/manon-le-roux-data/> 
                     """)
     
