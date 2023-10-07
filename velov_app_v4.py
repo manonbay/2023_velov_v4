@@ -38,7 +38,8 @@ with st.sidebar:
     
 if selected == accueil : 
     st.title('Déplacements des vélos en libre service de la ville de Lyon')
-    st.markdown("Projet port-folio réalisé en 2023 sur 24h de données récupérées via l'API de la métropole de Lyon : [Documentation](https://www.data.gouv.fr/fr/datasets/historique-des-disponibilites-des-stations-velov-de-la-metropole-de-lyon/#discussion-63ee8ecd7b600fcdee918dfb)")
+    st.markdown("Projet port-folio réalisé en 2023 sur 24h de données récupérées via l'API de la métropole de Lyon : \
+        [Documentation](https://www.data.gouv.fr/fr/datasets/historique-des-disponibilites-des-stations-velov-de-la-metropole-de-lyon/#discussion-63ee8ecd7b600fcdee918dfb)")
     st.markdown("**Stack technique :**")
     st.markdown("Jupyter/VScode, Python, Pandas, Streamlit, Folium , Leafmap, Plotly express")
     st.markdown("**Quelques lignes du fichier crée via les données de l'API pour réaliser ce projet :**")
@@ -74,9 +75,12 @@ elif selected == page1 :
     st.metric("**Stations en fonctionnement en fevrier 2023**", premierfevrier["number"].nunique())
     col1, col2 = st.columns(2)
     col1.plotly_chart(fig2, use_container_width=True)
-    col1.markdown("On observe une diminution du nombre de velov disponibles pour la station 10018 entre 7h et 10h,tandis que la station 10002 se remplie sur cet horaire. La station 8004 aura un remplissage relativement stable toute la journée")
+    col1.markdown("On observe une diminution du nombre de velov disponibles pour la station 10018 entre 7h et 10h, \
+        tandis que la station 10002 se remplie sur cet horaire. La station 8004 aura un remplissage relativement \
+        stable toute la journée")
     col2.plotly_chart(fig3, use_container_width=True)
-    col2.markdown("187 stations velov ont une capacité maximale comprise entre 10 et 19 stationnements. Seule une station a une capacité comprise entre 110 et 119 places.")
+    col2.markdown("187 stations velov ont une capacité maximale comprise entre 10 et 19 stationnements. \
+        Seule une station a une capacité comprise entre 110 et 119 places.")
     
 
 
@@ -203,7 +207,8 @@ if selected == page2 :
             col2.caption("")
             col2.caption("")
             col2.caption("")
-            col2.caption("La taille des cercles est fixe et dépend de la capacité maximale de chaque station, leur couleur est dépendante du taux de remplissage des stations")        
+            col2.caption("La taille des cercles est fixe et dépend de la capacité maximale de chaque station, \
+                leur couleur est dépendante du taux de remplissage des stations")        
 
         
     elif map_number == map3 : 
@@ -265,5 +270,7 @@ if selected == page2 :
             col2.caption("")
             col2.caption("")
             col2.caption("")
-            col2.caption("Cette map est la moins lisible mais nous pouvons y lire deux informations à la fois : la taille des cercles est relative au nombre de velov présents dans chaque station, leur couleur est relative au taux de remplissage des stations")  
+            col2.caption("Cette map est la moins lisible mais nous pouvons y lire deux informations à la fois : \
+                la taille des cercles est relative au nombre de velov présents dans chaque station, leur couleur \
+                est relative au taux de remplissage des stations")  
 
