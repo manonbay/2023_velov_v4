@@ -1,5 +1,6 @@
 # ignorer les .csv 
 .csv
+.pkl
 
 # ignorer le repertoire archives 
 archives/
